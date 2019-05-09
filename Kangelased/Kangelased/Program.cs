@@ -8,7 +8,7 @@ namespace Kangelased
     class Program
     {
         static List<Kangelane> Kangelased = new List<Kangelane>();
-        static void LaeKangelane(string Failinimi)
+        static void LaeKangelased(string Failinimi)
         {
             string[] failiAndmed = System.IO.File.ReadAllLines(Failinimi);
             for (int i = 0; i < failiAndmed.Length; i++)
@@ -28,6 +28,13 @@ namespace Kangelased
         }
         static void Main(string[] args)
         {
+            LaeKangelased("Kangelased.txt");
+            foreach(Kangelane tegelane in Kangelased)
+            {
+                Console.WriteLine(tegelane);
+                Console.WriteLine("ohus on 1000 inimest. Päästeti" + tegelane.Päästa(1000));
+            }
+
         }
     }
 }
