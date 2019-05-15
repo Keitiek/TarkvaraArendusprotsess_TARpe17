@@ -34,6 +34,18 @@ namespace Kangelased
         {
             return Nimi + "hoiab" + Asukoht + "turvalisena.";
         }
+        public string AnnaNimi()
+        {
+            return nimi;
+        }
+        public string SuperNimi()
+        {
+            return supernimi;
+        }
+        public string AnnaVoime()
+        {
+            return voime;
+        }
         }
     }
 
