@@ -9,16 +9,22 @@ namespace Kangelased
     {
         // privaatsed isendiväljad
         private string nimi;
+        private string supernimi;
+        private string voime;
         private string asukoht;
         //konstruktor
-        public Kangelane(string nimi, string asukoht)
+        public Kangelane(string nimi, string asukoht, string supernimi, string voime)
         {
             Nimi = nimi;
             Asukoht = asukoht;
+            Supernimi = supernimi;
+            Voime = voime;
         }
         //•	Kõigi isendiväljade jaoks on vastavad get-meetodid ja set-meetodid.
         public string Nimi { get => nimi; set => nimi = value; }
         public string Asukoht { get => asukoht; set => asukoht = value; }
+        public string Voime { get => voime; set => voime = value; }
+        public string Supernimi { get => supernimi; set => supernimi = value; }
 
         public virtual int Päästa(int ohus)
         {
@@ -26,7 +32,9 @@ namespace Kangelased
         }
         public override string ToString()
         {
-            return Nimi + "hoiab" +Asukoht+ "turvalisena.";
+            return Nimi + "hoiab" + Asukoht + "turvalisena.";
+        }
         }
     }
-}
+
+
