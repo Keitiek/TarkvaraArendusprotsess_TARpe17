@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Kangelased
 {
-    class Kangelane
+   abstract class Kangelane
     {
         // privaatsed isendiväljad
         private string nimi;
@@ -20,7 +20,7 @@ namespace Kangelased
             Supernimi = supernimi;
             Voime = voime;
         }
-        //•	Kõigi isendiväljade jaoks on vastavad get-meetodid ja set-meetodid.
+        //Kõigi isendiväljade jaoks on vastavad get-meetodid ja set-meetodid.
         public string Nimi { get => nimi; set => nimi = value; }
         public string Asukoht { get => asukoht; set => asukoht = value; }
         public string Voime { get => voime; set => voime = value; }
@@ -46,6 +46,7 @@ namespace Kangelased
         {
             return voime;
         }
+        public abstract string V6iduK6ne();
         }
     }
 
