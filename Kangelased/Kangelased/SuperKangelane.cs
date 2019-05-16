@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Kangelased
 {
-    class SuperKangelane:Kangelane
+    abstract class SuperKangelane:Kangelane
     {
         private double osavus;
 
