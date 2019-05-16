@@ -7,5 +7,6 @@ namespace Kangelased
 {
     interface ISuperv6ime
     {
+      public void KasutaV6imet();
     }
 }
